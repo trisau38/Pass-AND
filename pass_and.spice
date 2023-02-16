@@ -1,0 +1,17 @@
+* SPICE3 file created from pass_and.ext - technology: scmos
+
+.option scale=1u
+
+M1000 B' inverter_0/in B' Gnd nfet w=8 l=2
++  ad=112 pd=72 as=0 ps=0
+M1001 B' inverter_0/in B' B' pfet w=24 l=2
++  ad=304 pd=136 as=0 ps=0
+M1002 a_37_28# a_29_24# a_37_16# Gnd nfet w=8 l=4
++  ad=80 pd=36 as=64 ps=32
+M1003 a_37_42# B' a_37_28# Gnd nfet w=8 l=4
++  ad=64 pd=32 as=0 ps=0
+C0 A Gnd 3.57fF **FLOATING
+C1 B Gnd 19.30fF **FLOATING
+C2 a_29_24# Gnd 4.44fF
+C3 B' Gnd 24.09fF
+C4 inverter_0/in Gnd 4.36fF

@@ -1,0 +1,26 @@
+timestamp 1664282623
+version 8.2
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use inverter inverter_0 1 0 9 0 1 49
+node "A" 1 6384 39 18 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360 188 0 0
+node "out" 0 760 39 31 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0
+node "B" 2 19304 -18 13 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1056 536 0 0
+equiv "B" "B"
+equiv "B" "B"
+node "a_37_16#" 27 0 37 16 ndiff 64 32 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_29_24#" 107 4440 29 24 pc 0 0 0 0 72 44 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_37_28#" 33 0 37 28 ndiff 80 36 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "B'" 108 7824 29 38 pc 0 0 0 0 72 44 0 0 0 0 0 0 88 52 0 0 0 0
+node "a_37_42#" 27 0 37 42 ndiff 64 32 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+cap "a_37_42#" "B" 896
+cap "A" "a_37_16#" 896
+cap "B" "a_29_24#" 720
+cap "out" "a_37_28#" 896
+device mosfet nfet 37 24 38 25 4 8 "Gnd!" "a_29_24#" 8 0 "a_37_16#" 8 0 "a_37_28#" 8 0
+device mosfet nfet 37 38 38 39 4 8 "Gnd!" "B'" 8 0 "a_37_28#" 8 0 "a_37_42#" 8 0
+subcap "A" -2812
+cap "inverter_0/in" "B" 720
+merge "inverter_0/ndcontact" "B'" -752 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0

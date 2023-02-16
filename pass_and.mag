@@ -1,0 +1,57 @@
+magic
+tech scmos
+timestamp 1664282623
+<< polysilicon >>
+rect 33 38 37 42
+rect 45 38 47 42
+rect 33 24 37 28
+rect 45 24 47 28
+<< ndiffusion >>
+rect 37 48 45 50
+rect 37 44 39 48
+rect 43 44 45 48
+rect 37 42 45 44
+rect 37 35 45 38
+rect 37 31 39 35
+rect 43 31 45 35
+rect 37 28 45 31
+rect 37 22 45 24
+rect 37 18 39 22
+rect 43 18 45 22
+rect 37 16 45 18
+<< metal1 >>
+rect 11 38 29 42
+<< metal2 >>
+rect -18 90 43 94
+rect -18 42 -14 90
+rect 39 44 43 90
+rect -18 38 8 42
+rect -18 17 -14 38
+rect 39 31 55 35
+rect 29 17 33 28
+rect 60 22 64 82
+rect 39 18 64 22
+rect -18 13 33 17
+rect 60 13 64 18
+<< ntransistor >>
+rect 37 38 45 42
+rect 37 24 45 28
+<< polycontact >>
+rect 29 38 33 42
+rect 29 24 33 28
+<< ndcontact >>
+rect 39 44 43 48
+rect 39 31 43 35
+rect 39 18 43 22
+use inverter  inverter_0 ~/College/Assignments/magic/inverter
+timestamp 1664280310
+transform 1 0 9 0 1 49
+box -15 -30 17 39
+<< labels >>
+rlabel metal2 31 26 31 26 1 B
+rlabel metal2 49 33 49 33 1 out
+rlabel metal2 41 46 41 46 1 B
+rlabel polycontact 31 40 31 40 1 B'
+rlabel metal2 -16 47 -16 47 3 B
+rlabel metal2 62 47 62 47 7 A
+<< end >>
